@@ -1,1 +1,1 @@
-Adjust scripts for Raven BS (visuals)
+Adjust's visuals made for Raven BS
