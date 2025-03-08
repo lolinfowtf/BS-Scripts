@@ -7,7 +7,7 @@ void onLoad() {
     modules.registerSlider(scriptName, "Rectangle Thickness", "px", 10, 1, 50, 1);
     modules.registerSlider(scriptName, "BedAura Bar Color", "", 0, Colors);  
     modules.registerDescription("LongJump Progress Bar");
-    modules.registerButton("Longjump Airticks Indicator", true);
+    modules.registerButton("LongJump Bar", true);
     modules.registerSlider(scriptName, "Longjump Rectangle Height", "px", 10, 5, 50, 1);
     modules.registerSlider(scriptName, "Longjump Rectangle Thickness", "px", 10, 1, 50, 1);
     modules.registerSlider(scriptName, "LongJump Bar Color", "", 0, Colors); 
@@ -21,7 +21,7 @@ void onRenderTick(float partialTicks) {
     if (modules.isEnabled("BedAura")) {
         renderBedAuraProgress();
     }
-    if (modules.isEnabled("Long Jump") && modules.getButton(scriptName, "Longjump Airticks Indicator")) {
+    if (modules.isEnabled("Long Jump") && modules.getButton(scriptName, "LongJump Bar")) {
         renderLongJumpProgress();
     }
 }
