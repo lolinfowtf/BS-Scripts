@@ -1,2 +1,3 @@
 # BS-Scripts
-some scripts ig?
+Scripts that i use for raven bs.
+
