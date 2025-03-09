@@ -46,9 +46,9 @@ void renderLongJumpProgress() {
     float startX = 420; 
     float y = 230; 
     float width = Math.min(inAirTicks * 3, 100);
-    float height = (float) modules.getSlider(scriptName, "Longjump Rectangle Height");
+    float height = (float) modules.getSlider(scriptName, "LongJump Rectangle Height");
     float fullWidth = 100;
-    float outlineThickness = (float) modules.getSlider(scriptName, "Longjump Rectangle Thickness");
+    float outlineThickness = (float) modules.getSlider(scriptName, "LongJump Rectangle Thickness");
 
     Color[] gradient = getGradientColors((int) modules.getSlider(scriptName, "LongJump Color"));
     renderProgressBar(startX, y, width, height, fullWidth, outlineThickness, gradient[0], gradient[1]);
