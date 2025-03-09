@@ -2,15 +2,15 @@ String[] Colors = {"Cherry", "Cotton Candy", "Flare", "Flower", "Gold", "Graysca
 int inAirTicks; 
 
 void onLoad() {
-    modules.registerDescription("BedAura Progress Bar");
+    modules.registerDescription("BedAura Progress Bar Settings");
     modules.registerSlider(scriptName, "Rectangle Height", "px", 10, 5, 50, 1);
     modules.registerSlider(scriptName, "Rectangle Thickness", "px", 10, 1, 50, 1);
-    modules.registerSlider(scriptName, "BedAura Bar Color", "", 0, Colors);  
-    modules.registerDescription("LongJump Progress Bar");
+    modules.registerSlider(scriptName, "BedAura Color", "", 0, Colors);
+    modules.registerDescription("LongJump Progress Bar Settings");
     modules.registerButton("LongJump Bar", true);
-    modules.registerSlider(scriptName, "Longjump Rectangle Height", "px", 10, 5, 50, 1);
-    modules.registerSlider(scriptName, "Longjump Rectangle Thickness", "px", 10, 1, 50, 1);
-    modules.registerSlider(scriptName, "LongJump Bar Color", "", 0, Colors); 
+    modules.registerSlider(scriptName, "LongJump Rectangle Height", "px", 10, 5, 50, 1);
+    modules.registerSlider(scriptName, "LongJump Rectangle Thickness", "px", 10, 1, 50, 1);
+    modules.registerSlider(scriptName, "LongJump Color", "", 0, Colors);
 }
 
 void onPreMotion(PlayerState state) {
