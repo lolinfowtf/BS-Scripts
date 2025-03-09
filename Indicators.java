@@ -38,7 +38,7 @@ void renderBedAuraProgress() {
     float fullWidth = 125;
     float outlineThickness = (float) modules.getSlider(scriptName, "Rectangle Thickness");
 
-    Color[] gradient = getGradientColors((int) modules.getSlider(scriptName, "BedAura Bar Color"));
+    Color[] gradient = getGradientColors((int) modules.getSlider(scriptName, "BedAura Color"));
     renderProgressBar(startX, y, width, height, fullWidth, outlineThickness, gradient[0], gradient[1]);
 }
 
@@ -50,7 +50,7 @@ void renderLongJumpProgress() {
     float fullWidth = 100;
     float outlineThickness = (float) modules.getSlider(scriptName, "Longjump Rectangle Thickness");
 
-    Color[] gradient = getGradientColors((int) modules.getSlider(scriptName, "LongJump Bar Color"));
+    Color[] gradient = getGradientColors((int) modules.getSlider(scriptName, "LongJump Color"));
     renderProgressBar(startX, y, width, height, fullWidth, outlineThickness, gradient[0], gradient[1]);
 }
 
